@@ -5,12 +5,19 @@
   background-size: cover
   padding-top: 130px
   padding-bottom: 190px
-  margin-bottom: -60px
+  margin-bottom: -40px
   position: relative
-  min-height: calc(100vh - 30px)
+  min-height: calc(100vh - 50px)
   z-index: 1
+  @media screen and (max-width: 768px)
+    padding-top: 80px
+    padding-bottom: 80px
+  @media screen and (max-width: 576px)
+    padding-top: 40px
+    padding-bottom: 60px
+    margin-bottom: -10px
+    min-height: calc(100vh - 80px)
   .thanks
-    font-size: 21px
     color: rgb(0, 0, 0)
     line-height: 1.286
     background-image: url('../img/pink-bg.png')
@@ -29,6 +36,10 @@
     color: rgb(0, 0, 0)
     text-transform: uppercase
     line-height: 0.936
+    @media screen and (max-width: 992px)
+      font-size: 60px
+    @media screen and (max-width: 768px)
+      font-size: 50px
   .text
     margin-bottom: 45px
     border-top-left-radius: 12px
@@ -41,15 +52,34 @@
     background-repeat: no-repeat
     background-size: cover
     color: #fff
+    @media screen and (max-width: 992px)
+      padding: 30px
+    @media screen and (max-width: 768px)
+      padding: 20px
   .socials
     display: flex
     align-items: center
     padding-left: 45px
+    @media screen and (max-width: 992px)
+      padding-left: 30px
+    @media screen and (max-width: 768px)
+      padding-left: 20px
     a
       margin-right: 30px
       display: inline-block
+      @media screen and (max-width: 768px)
+        margin-right: 20px
       &:last-of-type
         margin-right: 0
       img
         width: 100px
         height: 100px
+        @media screen and (max-width: 992px)
+          width: 80px
+          height: 80px
+        @media screen and (max-width: 768px)
+          height: 60px
+          width: 60px
+        @media screen and (max-width: 576px)
+          width: 40px
+          height: 40px
