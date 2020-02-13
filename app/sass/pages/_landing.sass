@@ -230,6 +230,24 @@
 .about-module
   padding-top: 100px
   padding-bottom: 100px
+  @media screen and (max-width: 768px)
+    padding-top: 80px
+    padding-bottom: 80px
+  @media screen and (max-width: 576px)
+    padding-top: 60px
+    padding-bottom: 60px
   .title
     margin-bottom: 85px
     text-align: center
+    @media screen and (max-width: 768px)
+      margin-bottom: 60px
+    @media screen and (max-width: 576px)
+      margin-bottom: 40px
+  .slider
+    .item
+      outline: none
+      text-align: center
+      a
+        display: inline-block
+      img
+        max-width: 170px
