@@ -227,6 +227,111 @@
         .red-btn
           margin: 0 auto
 
+.orator-module
+  background-color: $green
+  .container
+    position: relative
+    padding: 70px 15px
+    @media screen and (max-width: 768px)
+      padding: 60px 15px
+    @media screen and (max-width: 576px)
+      padding-bottom: 40px
+  .money1
+    position: absolute
+    top: -50px
+    left: -100px
+    @media screen and (max-width: 1400px)
+      left: 0
+    @media screen and (max-width: 768px)
+      max-width: 400px
+    @media screen and (max-width: 576px)
+      max-width: 280px
+  .money2
+    position: absolute
+    bottom: -70px
+    right: -20px
+    @media screen and (max-width: 1400px)
+      right: 0
+    @media screen and (max-width: 768px)
+      max-width: 400px
+    @media screen and (max-width: 576px)
+      max-width: 280px
+      bottom: -40px
+  .info-block
+    background-color: #fff
+    border-radius: 30px
+    box-shadow: 0px 0px 29px 0px rgba(81, 99, 10, 0.25)
+    align-items: center
+    padding: 20px 60px
+    position: relative
+    z-index: 2
+    @media screen and (max-width: 992px)
+      flex-direction: column
+    @media screen and (max-width: 768px)
+      padding: 20px 40px
+    @media screen and (max-width: 576px)
+      padding: 20px 30px
+    img
+      max-width: 405px
+      margin-right: 40px
+      margin-top: -115px
+      margin-bottom: -35px
+      @media screen and (max-width: 992px)
+        max-width: 300px
+        margin-bottom: 20px
+      @media screen and (max-width: 768px)
+        max-width: 250px
+      @media screen and (max-width: 576px)
+        max-width: 200px
+    .text
+      max-width: 560px
+      .title-text
+        line-height: 1
+        margin-bottom: 50px
+        @media screen and (max-width: 992px)
+          margin-bottom: 30px
+        @media screen and (max-width: 768px)
+          margin-bottom: 20px
+      .name
+        margin-bottom: 40px
+        font-size: 23px
+        font-family: "ProximaNovaBold"
+        color: rgb(0, 0, 0)
+        font-weight: bold
+        text-transform: uppercase
+        line-height: 1.609
+        @media screen and (max-width: 992px)
+          margin-bottom: 20px
+          font-size: 20px
+        @media screen and (max-width: 768px)
+          font-size: 19px
+      ul
+        padding: 0
+        margin: 0
+        padding-left: 56px
+        @media screen and (max-width: 768px)
+          padding-left: 35px
+        li
+          margin-bottom: 5px
+          list-style-type: none
+          font-size: 18px
+          color: rgb(0, 0, 0)
+          line-height: 1.667
+          position: relative
+          &:last-of-type
+            margin-bottom: 0
+          &::before
+            content: ''
+            position: absolute
+            left: -35px
+            top: 5px
+            background-image: url('../img/list-before.png')
+            background-size: cover
+            background-repeat: no-repeat
+            background-position: center
+            width: 21px
+            height: 21px
+
 .about-module
   padding-top: 100px
   padding-bottom: 100px
@@ -244,8 +349,50 @@
     @media screen and (max-width: 576px)
       margin-bottom: 40px
   .slider
-    .item
+    position: relative
+    max-width: 1010px
+    margin: 0 auto
+    .slick-next, .slick-prev
+      position: absolute
+      top: calc(50% - 20px)
+      z-index: 2
+      border: 1px solid #979595
+      width: 40px
+      height: 40px
+      font-size: 0
       outline: none
+      transition: all.2s ease
+      &:hover
+        background-color: $green
+      &::before
+        content: ''
+        width: 45px
+        height: 4px
+        position: absolute
+        top: calc(50% - 2px)
+        background-image: url('../img/slick-arrow.png')
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+    .slick-prev
+      left: -70px
+      @media screen and (max-width: 1200px)
+        left: -30px
+      @media screen and (max-width: 1080px)
+        left: 0
+      &::before
+        right: -13px
+    .slick-next
+      right: -70px
+      @media screen and (max-width: 1200px)
+        right: -30px
+      @media screen and (max-width: 1080px)
+        right: 0
+      &::before
+        left: -13px
+        transform: rotate(180deg)
+    .item
+      outline: none !important
       text-align: center
       a
         display: inline-block
