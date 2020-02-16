@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Business</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel='stylesheet' type='text/css' href='css/main.min.css'/>
+    </head>
+  <body>
+    <div class="request-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5">
+            <div class="main-title">Получить  персональную  консультацию</div>
+          </div>
+          <div class="col-xl-7">
+            <div class="reminder"><img src="img/rem.png" alt=""></div>
+            <form action="" class="form-box">
+              <div class="input-block">
+                <label for="">Введите имя <img src="img/line1.png" alt=""></label>
+                <input type="text" name="" value="" placeholder="Олег Петровский">
+              </div>
+              <div class="input-block">
+                <label for="">Номер телефона <img src="img/line1.png" alt=""></label>
+                <input type="text" name="" value="" placeholder="+39 098 125 64 88">
+              </div>
+              <div class="input-block">
+                <label for="">Введите E-mail <img src="img/line1.png" alt=""></label>
+                <input type="text" name="" value="" placeholder="example@gmail.com">
+              </div>
+              <div class="input-block button">
+                <button type="submit" class="red-btn open-thanks">отправить заявку</button>
+              </div>
+              <div class="checkbox-input">
+                <input type="checkbox" name="" id="check1" value="" required>
+                <label for="check1">Нажимая на кнопку, я принимаю условия <a href=""> Политики конфиденциальнос</a></label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="inherit">
+      <div class="container flex">
+        <a href="#">Политика конфиденциальности</a>
+        <p class="flex copyright"><img src="img/copyright.png" alt="icon"> adressayta.com 2020</p>
+      </div>
+    </footer>
+
+
+    <div class="thanks-popup">
+      <div class="overlay"></div>
+      <div class="alert-box">
+        <div class="close-btn"><img src="img/close.png" alt=""></div>
+        <div class="title">Спасибо,<br>Мы приняли вашу заявку</div>
+        <p> и в ближайшее время с Вами свяжутся специалисты по подключению</p>
+        <a href="" class="red-btn">Вернуться</a>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script type="text/javascript">
+    $('.open-thanks').click(function () {
+      $('.thanks-popup').fadeIn();
+      $('.thanks-popup').css('display','flex')
+    })
+
+    $('.thanks-popup .close-btn').click(function () {
+      $('.thanks-popup').fadeOut();
+    })
+    $('.thanks-popup .overlay').click(function () {
+      $('.thanks-popup').fadeOut();
+    })
+    $('.thanks-popup .red-btn').click(function (e) {
+      e.preventDefault();
+      $('.thanks-popup').fadeOut();
+    })
+    </script>
+</body>
+</html>
